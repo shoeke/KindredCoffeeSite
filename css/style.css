@@ -1,0 +1,53 @@
+
+:root {
+  --main-aqua: #3fbcc3;
+  --support-dk-orange: #f26a42;
+  --support-lt-peach: #fbb474;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.page-container {
+  width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "roboto-slab", Baskerville, serif;
+  font-weight: 700;
+  color: var(--support-dk-orange);
+  font-size: 6em;
+  margin-bottom: 8rem;
+}
+p {
+  font-family: "khula", verdana, sans-serif;
+  font-size: 2.6em;
+  font-weight: 400;
+  color: var(--support-dk-orange);
+  line-height: 1.2;
+}
+header {
+  padding: 20% 10%;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+  background-image: url("../images/bgHBPattern.jpg");
+  background-size: cover;
+}
+header img {
+  width: 65%;
+  padding: 0 0 20%;
+}
+header p span {
+  font-weight: 700;
+}
+header p {
+  margin-bottom: 6rem;
+}
+.b-img-2, .b-img-3, .b-img-4 {
+  display: none;
+}
+
+.person-2 {
+  display: none;
+}
