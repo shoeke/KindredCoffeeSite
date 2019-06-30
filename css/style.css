@@ -187,3 +187,33 @@ padding-top: 200px;
 }
 
 /*Contact Styles*/
+.contact {
+  padding: 10%;
+  font-size: 1rem;
+  background-image: url("../images/bgHBPattern.jpg");
+  background-size: cover;
+  color: var(--main-aqua);
+}
+.contact a, .contact p {
+  color: var(--main-aqua);
+}
+.emp-text {
+  font-weight: 700;
+}
+.address-info {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-column-gap: 3em;
+  grid-template-rows: auto;
+  grid-row-gap: 3em;
+}
+.address-info img {
+  padding: 5%;
+  margin-right: 2em;
+}
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4em;
+  margin-top: 4em;
+}
