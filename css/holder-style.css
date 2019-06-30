@@ -1,0 +1,227 @@
+
+:root {
+  --main-aqua: #3fbcc3;
+  --support-dk-orange: #f26a42;
+  --support-lt-peach: #fbb474;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*set the root with a flex size that will make calcs easier*/
+}
+.page-container {
+  width: 100%;
+  margin: 0 auto;
+}
+/*can reduce the the % of container on desktop version*/
+h1, h2 {
+  font-family: "roboto-slab", Baskerville, serif;
+  font-size: 6em;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+h1 {
+  color: var(--support-dk-orange);
+  margin-bottom: 8rem;
+}
+h2 {
+  margin-bottom: 6rem;
+}
+h3, h4{
+  font-family: "khula", verdana, sans-serif;
+  font-size: 2.6em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 6rem;
+}
+h4 {
+  text-transform: uppercase;
+  color: var(--support-dk-orange);
+  margin: 2rem 0;
+}
+p {
+  font-family: "khula", verdana, sans-serif;
+  font-size: 2.6em;
+  font-weight: 400;
+  color: var(--support-dk-orange);
+  line-height: 1.2;
+}
+/*main header styles*/
+header {
+  padding: 20% 10% 10%;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+  background-image: url("../images/bgHBPattern.jpg");
+  background-size: cover;
+}
+header img {
+  width: 65%;
+  padding: 0 0 20%;
+}
+header p span {
+  font-weight: 700;
+}
+header p {
+  margin-bottom: 1.5em;
+}
+header p:nth-last-of-type(1) {
+  margin: 0;
+}
+/*Brand Images Styles*/
+.brand-images img {
+  width: 100%;
+  height: 100%;
+  margin: 6rem 0;
+}
+.b-img-2, .b-img-3, .b-img-4 {
+  display: none;
+}
+
+/*Sign Up Section Styles*/
+.sign-up {
+  background-color: var(--main-aqua);
+  color: #fff;
+  font-size: 1.65rem;
+  padding: 10%;
+}
+form {
+  margin-bottom: 3em;
+}
+input[type="text"] {
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 100%;
+  height: 9em;
+  margin: 1.75em auto;
+  padding-left: 25px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 4rem;
+	color: #adabab;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 4rem;
+	color: #adabab;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 4rem;
+	color: #adabab;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 4rem;
+  color: #adabab;
+}
+
+input[type="submit"]{
+  width: 100%;
+  border-radius: 12px;
+  background-color: var(--support-lt-peach);
+  box-shadow: inset 0 0 36px #fdd4b0, 0 8px 6px -3px #888888;
+  color: #fff;
+  font-size: 5rem;
+  padding: .5em .25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: .5em auto;
+}
+.sign-up p {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
+/*Products and Services Styles*/
+.products-services{
+  padding: 10%;
+  margin: 0 auto;
+  font-size: 1.65rem;
+}
+.products-services img {
+  display: block;
+  width: 40%;
+  padding: 6em 4em 2em;
+  margin: 0 auto;
+}
+.products-services p {
+  color: #707070;
+  text-align: center;
+}
+
+/*Social Proof Styles*/
+.social-proof {
+  background-color: var(--support-lt-peach);
+  color: #fff;
+  font-size: 2rem;
+  padding: 10% 0;
+}
+.person-1, .person-2 {
+  width: 100%;
+  background-color: #fdddc0;
+}
+.person-2 {
+  display: none;
+}
+/*display:block; on tablet and above*/
+
+.person-1 img, .person-2 img {
+  width: 75%;
+  float: left;
+  shape-outside: polygon(0% 0%, 110% 0%, 0% 110%);
+}
+.quote-text {
+padding: 6%;
+padding-top: 10em;
+}
+.quote-text p, .quote-text h4 {
+  color: #707070;
+}
+.quote-text p {
+  font-size: 2em;
+  line-height: 1.4;
+}
+
+/*Contact Styles*/
+.contact {
+  padding: 10%;
+  font-size: 1.25rem;
+  background-image: url("../images/bgHBPattern.jpg");
+  background-size: cover;
+  color: var(--main-aqua);
+}
+.contact a, .contact p {
+  color: var(--main-aqua);
+}
+.contact h2 {
+  font-size: 12rem;
+}
+.emp-text {
+  font-weight: 700;
+}
+.address-info {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-column-gap: 6em;
+  grid-row-gap: 2em;
+  align-items: center;
+  padding-bottom: 10%;
+}
+hr {
+  border: 3px solid var(--support-lt-peach);
+}
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10em;
+  margin-top: 8em;
+}
+
+/*Footer Styles*/
+footer {
+  font-size: .75rem;
+  padding: 6em 0;
+  margin: 0 auto;
+  text-align: center;
+}
