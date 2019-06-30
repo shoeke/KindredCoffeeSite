@@ -189,7 +189,7 @@ padding-top: 200px;
 /*Contact Styles*/
 .contact {
   padding: 10%;
-  font-size: 1rem;
+  font-size: 1.25rem;
   background-image: url("../images/bgHBPattern.jpg");
   background-size: cover;
   color: var(--main-aqua);
@@ -197,23 +197,30 @@ padding-top: 200px;
 .contact a, .contact p {
   color: var(--main-aqua);
 }
+.contact h2 {
+  font-size: 12rem;
+}
 .emp-text {
   font-weight: 700;
 }
 .address-info {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-column-gap: 3em;
+  grid-template-columns: 1fr 6fr;
+  grid-column-gap: 6em;
   grid-template-rows: auto;
-  grid-row-gap: 3em;
+  grid-row-gap: 6em;
+  align-items: center;
+  padding-bottom: 10%;
 }
 .address-info img {
-  padding: 5%;
-  margin-right: 2em;
+justify-content: center;
+}
+hr {
+  border: 3px solid var(--support-dk-orange);
 }
 .social-media {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 4em;
-  margin-top: 4em;
+  grid-column-gap: 10em;
+  margin-top: 8em;
 }
