@@ -46,3 +46,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: #707070;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: #707070;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: #707070;
+}
+:-moz-placeholder { /* Firefox 18- */
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: #707070;
+}
