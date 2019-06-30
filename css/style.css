@@ -6,12 +6,14 @@
 }
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 1vw;
+   /*set the root with a flex size that will make calcs easier*/
 }
 .page-container {
   width: 100%;
   margin: 0 auto;
 }
+/*can reduce the the % of container on desktop version*/
 h1, h2 {
   font-family: "roboto-slab", Baskerville, serif;
   font-weight: 700;
@@ -19,25 +21,27 @@ h1, h2 {
   text-align: center;
 }
 h1 {
+  font-size: 12rem;
   color: var(--support-dk-orange);
-  font-size: 6em;
   margin-bottom: 8rem;
 }
 h2 {
-  font-size: 6em;
+  font-size: 11rem;
   margin-bottom: 6rem;
-
-
+}
+h3 {
+  font-size: 2.6em;
 }
 h3, h4{
   font-family: "khula", verdana, sans-serif;
-  font-size: 2.5em;
+
   font-weight: 600;
   text-align: center;
   line-height: 1.2;
   margin-bottom: 6rem;
 }
 h4 {
+  font-size: 3.25em;
   text-transform: uppercase;
   color: var(--support-dk-orange);
   margin: 2rem 0;
@@ -66,7 +70,7 @@ header p span {
   font-weight: 700;
 }
 header p {
-  margin-bottom: 6rem;
+  margin-bottom: 1.5em;
 }
 header p:nth-last-of-type(1) {
   margin: 0;
@@ -80,39 +84,40 @@ header p:nth-last-of-type(1) {
 .b-img-2, .b-img-3, .b-img-4 {
   display: none;
 }
+
 /*Sign Up Section Styles*/
 .sign-up {
   background-color: var(--main-aqua);
   color: #fff;
-  font-size: 1.65rem;
+  font-size: 2rem;
   padding: 10%;
 }
 form {
-  margin-bottom: 6rem;
+  margin-bottom: 3em;
 }
 input[type="text"] {
   box-sizing: border-box;
   background-color: #fff;
   width: 100%;
-  height: 9em;
-  margin: 1.75em auto;
+  height: 5em;
+  margin: 1em auto;
   padding-left: 25px;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-size: 4rem;
+  font-size: 1.5em;
 	color: #adabab;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  font-size: 4rem;
+  font-size: 1.5em;
 	color: #adabab;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  font-size: 4rem;
+  font-size: 1.5em;
 	color: #adabab;
 }
 :-moz-placeholder { /* Firefox 18- */
-  font-size: 4rem;
+  font-size: 1.5em;
   color: #adabab;
 }
 
@@ -120,35 +125,25 @@ input[type="submit"]{
   width: 100%;
   border-radius: 12px;
   background-color: var(--support-lt-peach);
-  box-shadow: inset 0 0 36px #fdd4b0, 0 8px 6px -3px #888888;
+  box-shadow: inset 0 0 36px #fdd4b0, 0 8px 6px -6px #888888;
   color: #fff;
-  font-size: 5rem;
-  padding: .5em .25em;
+  font-size: 4.5rem;
+  padding: .85em .25em;
   font-weight: 600;
   text-transform: uppercase;
   margin: .5em auto;
 }
-#submit {
-
-
-}
-
-#submit::-webkit-input-placeholder {
-
-}
 .sign-up p {
   color: #fff;
-  font-size: .85em;
+  font-size: 2em;
   text-align: center;
 }
+
 /*Products and Services Styles*/
 .products-services{
   padding: 10%;
   margin: 0 auto;
-  font-size: 1.65rem;
-}
-.menu {
-  margin: 0 auto;
+  font-size: 2rem;
 }
 .products-services img {
   display: block;
@@ -175,9 +170,8 @@ input[type="submit"]{
 .person-2 {
   display: none;
 }
-.quote-image {
-    padding: 0;
-}
+/*display:block; on tablet and above*/
+
 .person-1 img, .person-2 img {
   width: 75%;
   float: left;
@@ -185,19 +179,20 @@ input[type="submit"]{
 }
 .quote-text {
 padding: 6%;
-padding-top: 200px;
+padding-top: 10em;
 }
 .quote-text p, .quote-text h4 {
   color: #707070;
 }
 .quote-text p {
-    font-size: 1.5em;
+  font-size: 2em;
+  line-height: 1.4;
 }
 
 /*Contact Styles*/
 .contact {
   padding: 10%;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   background-image: url("../images/bgHBPattern.jpg");
   background-size: cover;
   color: var(--main-aqua);
@@ -215,13 +210,9 @@ padding-top: 200px;
   display: grid;
   grid-template-columns: 1fr 6fr;
   grid-column-gap: 6em;
-  grid-template-rows: auto;
   grid-row-gap: 2em;
   align-items: center;
   padding-bottom: 10%;
-}
-.address-info img {
-justify-content: center;
 }
 hr {
   border: 3px solid var(--support-lt-peach);
