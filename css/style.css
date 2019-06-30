@@ -27,6 +27,7 @@ h2 {
   font-size: 6em;
   margin-bottom: 6rem;
 
+
 }
 h3, h4{
   font-family: "khula", verdana, sans-serif;
@@ -39,6 +40,7 @@ h3, h4{
 h4 {
   text-transform: uppercase;
   color: var(--support-dk-orange);
+  margin: 2rem 0;
 }
 p {
   font-family: "khula", verdana, sans-serif;
@@ -143,13 +145,36 @@ text-transform: uppercase;
 .products-services img {
   display: block;
   width: 40%;
-  padding: 4em;
+  padding: 6em 4em 2em;
   margin: 0 auto;
 }
 .products-services p {
   color: #707070;
   text-align: center;
 }
+
+/*Social Proof Styles*/
+.social-proof {
+  background-color: var(--support-lt-peach);
+  color: #fff;
+  font-size: 2rem;
+  padding: 10% 0;
+}
+.person-1, .person-2 {
+  width: 100%;
+  background-color: #fdddc0;
+
+}
 .person-2 {
   display: none;
 }
+.quote-image {
+    padding: 0;
+}
+.person-1 img {
+  width: 75%;
+  float: left;
+  shape-outside: polygon(0% 0%, 115% 0%, 0% 115%);
+}
+.quote-text {
+padding: 10%;}
