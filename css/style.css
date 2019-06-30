@@ -163,7 +163,6 @@ text-transform: uppercase;
 .person-1, .person-2 {
   width: 100%;
   background-color: #fdddc0;
-
 }
 .person-2 {
   display: none;
@@ -171,10 +170,20 @@ text-transform: uppercase;
 .quote-image {
     padding: 0;
 }
-.person-1 img {
+.person-1 img, .person-2 img {
   width: 75%;
   float: left;
-  shape-outside: polygon(0% 0%, 115% 0%, 0% 115%);
+  shape-outside: polygon(0% 0%, 110% 0%, 0% 110%);
 }
 .quote-text {
-padding: 10%;}
+padding: 6%;
+padding-top: 200px;
+}
+.quote-text p, .quote-text h4 {
+  color: #707070;
+}
+.quote-text p {
+    font-size: 1.5em;
+}
+
+/*Contact Styles*/
