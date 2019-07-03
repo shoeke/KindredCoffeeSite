@@ -94,11 +94,16 @@ header p:nth-last-of-type(1) {
 }
 
 /*Sign Up Section Styles*/
+
 .sign-up {
   background-color: var(--main-aqua);
   color: #fff;
   font-size: 2rem;
   padding: 10%;
+}
+.cta-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #first-name {
@@ -208,13 +213,14 @@ input[type="submit"]{
 .person-1, .person-2 {
   width: 100%;
   background-color: #fdddc0;
+  box-shadow: inset 0 0 15px #9e9e9e40;
 }
 .person-2 {
   display: none;
 }
 /*display:block; on tablet and above*/
 
-.person-1 img, .person-2 img {
+.quote-image {
   width: 75%;
   float: left;
   shape-outside: polygon(0% 0%, 110% 0%, 0% 110%);
@@ -231,6 +237,7 @@ padding-top: 10em;
   line-height: 1.4;
 }
 
+
 /*Contact Styles*/
 .contact {
   padding: 10%;
@@ -245,13 +252,17 @@ padding-top: 10em;
 .contact h2 {
   font-size: 12rem;
 }
+.contact-wrapper {
+  max-width: 475px;
+  margin: 0 auto;
+}
 .emp-text {
   font-weight: 700;
 }
 .address-info {
   display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-column-gap: 6em;
+  grid-template-columns: 1fr 5fr;
+  grid-column-gap: 5%;
   grid-row-gap: 2em;
   grid-auto-rows: 1fr;
 
@@ -259,7 +270,7 @@ padding-top: 10em;
   padding-bottom: 10%;
 }
 hr {
-  border: 3px solid var(--support-lt-peach);
+  border: 1.5px solid var(--support-lt-peach);
 }
 .social-media {
   display: grid;
@@ -270,7 +281,7 @@ hr {
 
 /*Footer Styles*/
 footer {
-  font-size: .75rem;
+  font-size: 1rem;
   padding: 6em 0;
   margin: 0 auto;
   text-align: center;
@@ -355,10 +366,7 @@ form {
 }
 /*MQ Social Proof TABLET*/
 .social-proof {
-  background-color: var(--support-lt-peach);
-  color: #fff;
   font-size: 2.65rem;
-  padding: 10% 0;
 }
 .social-examples {
   display: flex;
@@ -371,29 +379,46 @@ form {
 .person-2 {
   display: block;
 }
-.person-1, .person-2 {
-  width: 100%;
-  background-color: #fdddc0;
-}
 .quote-text h4 {
   font-size: 2.65em;
 }
-/*display:block; on tablet and above*/
-
-.person-1 img, .person-2 img {
-  width: 75%;
-  float: left;
-  shape-outside: polygon(0% 0%, 110% 0%, 0% 110%);
+.quote-image {
+  width: 50%;
 }
 .quote-text {
 padding: 6%;
-padding-top: 10em;
+padding-top: 4em;
 }
-.quote-text p, .quote-text h4 {
-  color: #707070;
+footer {
+  font-size: 1.5em;
 }
-.quote-text p {
-  font-size: 2em;
-  line-height: 1.4;
 }
+/*  **Desktop Media Query**  */
+@media only screen and (min-width: 1024px) {
+  .sm-screen-text {
+    display: none;
+  }
+  .med-screen-text {
+    display: none;
+  }
+  .lg-screen-text {
+    display: block;
+  }
+.page-container {
+  max-width: 1290px;
+}
+/*MQ Header Styles DESKTOP*/
+h1 {
+  font-size: 82px;
+  margin-bottom: .5em;
+}
+header p {
+  font-size: 36px;
+}
+header {
+  padding: 10% 10% 6%;
+}
+header img {
+  width: 40%;
+  padding: 0 0 10%;
 }
