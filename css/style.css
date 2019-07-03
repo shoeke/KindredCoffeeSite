@@ -333,24 +333,67 @@ form {
 /*MQ Products and Services Styles TABLET*/
 .products-services{
   padding: 10% 8%;
-  margin: 0 auto;
-  font-size: 2rem;
-  display: grid;
- grid-template-columns: 50% 50%;
+  font-size: 1.85rem;
+  grid-template-columns: 47% 47%;
   grid-template-areas: "menu products" "community community";
+  grid-row-gap: 8em;
+  grid-column-gap: 6%;
 }
 .menu, .products {
   max-width: 86%;
 }
 .community {
-  max-width: 50%;
+  max-width: 47%;
 }
 .products-services img {
-  width: 40%;
-  padding: 6em 4em 2em;
+  width: 200px;
+  padding: 0 4em 2em;
 }
 .products-services p {
   color: #707070;
   text-align: center;
+}
+/*MQ Social Proof TABLET*/
+.social-proof {
+  background-color: var(--support-lt-peach);
+  color: #fff;
+  font-size: 2.65rem;
+  padding: 10% 0;
+}
+.social-examples {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 8%;
+}
+.person-1 {
+  margin-bottom: 4em;
+}
+.person-2 {
+  display: block;
+}
+.person-1, .person-2 {
+  width: 100%;
+  background-color: #fdddc0;
+}
+.quote-text h4 {
+  font-size: 2.65em;
+}
+/*display:block; on tablet and above*/
+
+.person-1 img, .person-2 img {
+  width: 75%;
+  float: left;
+  shape-outside: polygon(0% 0%, 110% 0%, 0% 110%);
+}
+.quote-text {
+padding: 6%;
+padding-top: 10em;
+}
+.quote-text p, .quote-text h4 {
+  color: #707070;
+}
+.quote-text p {
+  font-size: 2em;
+  line-height: 1.4;
 }
 }
