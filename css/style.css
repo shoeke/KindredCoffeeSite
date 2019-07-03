@@ -102,7 +102,7 @@ header p:nth-last-of-type(1) {
   padding: 10%;
 }
 .cta-wrapper {
-  max-width: 600px;
+  max-width: 710px;
   margin: 0 auto;
 }
 
@@ -421,4 +421,36 @@ header {
 header img {
   width: 40%;
   padding: 0 0 10%;
+}
+/*MQ Brand Styles DESKTOP*/
+  .brand-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4em;
+
+  }
+.b-img-2, .b-img-3 {
+  display: block;
+      object-fit: contain;
+}
+.b-img-4 {
+  display: none;
+}
+/*MQ Newsletter Sign-Up Styles DESKTOP*/
+.sign-up {
+  padding: 6%;
+}
+.sign-up h2 {
+  font-size: 60px;
+  margin-bottom: .75em;
+}
+.sign-up h3,  {
+  font-size: 36px;
+}
+.sign-up p {
+  font-size: 24px;
+}
+input[type="submit"] {
+  font-size: 32px;
+  padding: .5em .25em;
 }
