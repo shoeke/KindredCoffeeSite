@@ -26,8 +26,8 @@
           <h1 class="sm-screen-text">Coffee on Us!</h1>
           <h1 class = "med-screen-text">Have a<br> Coffee on Us!</h1>
           <h1 class = "lg-screen-text">Have a Coffee on Us!</h1>
-          <p>Come meet us at our Grand Opening at the <span>Garden Grove Shopping Center August 3–4th.</span>  </p>
-          <p>Let us welcome you with a free coffee and enter you to win a year's worth of our local bean brew!</p>
+          <p>Come meet us at our Grand Opening at the <span class="bold">Garden Grove Shopping Center <span class="no-break">August 3–4th.</span></span>  </p>
+          <p>Let us welcome you with a free coffee and enter you to win a year's worth of our <span class="no-break">local bean brew!</span></p>
         </div>
       </header>
 
@@ -48,11 +48,11 @@
       </section>
 
       <!-- Newsletter Sign Up Section -->
-      <section class = "sign-up">
+      <!--<section class = "sign-up">
 
         <h2>Stay in the Know with our Newsletter</h2>
         <div class="cta-wrapper">
-          <h3>Sign up today and get a free yummy scone!</h3>
+          <h4>Sign up today and get a free yummy scone!</h4>
           <form class="newsletter" action="mailto:sabrina.hoeke@yahoo.com" method="post">
             <input id="first-name" type="text" placeholder="First Name"><br>
             <input id="last-name" type="text" name="lastname" placeholder="Last Name"><br>
@@ -61,34 +61,34 @@
           </form>
           <p>Don't Worry! We got your back! We don't share any of your info!</p>
         </div>
-      </section>
+      </section>-->
 
       <!-- Products and Services Section -->
-      <section class = "products-services">
+    <!--  <section class = "products-services">
         <div class="menu">
           <img src="images/menuIcon.png" alt="coffee menu icon">
-          <h4>Menu</h4>
+          <h3>Menu</h3>
           <p class="sm-screen-text">All our coffees are brewed from local Pacific Roast beans.</p>
           <p class="med-screen-text">All our coffees are brewed from local Pacific Roast beans. You’re gonna love our brews!</p>
           <p class="lg-screen-text">All our coffees are brewed from local Pacific Roast beans. Whether it’s a pour-over or whipped mocha latte, you’re gonna love our brews!</p>
         </div>
         <div class="products">
           <img src="images/productIcon.png" alt="coffee pastries and tea products">
-          <h4>Products</h4>
+          <h3>Products</h3>
           <p class="sm-screen-text">Every one of our products is locally sourced.</p>
           <p class="med-screen-text">Come check out pastries, fresh juices, and teas locally sourced from your own neighborhood!</p>
           <p class="lg-screen-text">Every one of our products is locally sourced. Come check out pastries, fresh juices, and teas from your very own neighborhood!</p>
         </div>
         <div class="community">
           <img src="images/communityIcon.png" alt="two mugs clinking together">
-          <h4>Community</h4>
+          <h3>Community</h3>
           <p class="sm-screen-text med-screen-text">We support local, and becoming a communication center for local announcements and volunteer opportunities.</p>
           <p class="lg-screen-text">Our goal is to provide a place where our neighbors can come together. We support sharing local talent, and becoming a communication center for local news and volunteer opportunities. </p>
         </div>
-      </section>
+      </section>-->
 
       <!-- Social Proof -->
-      <section class = "social-proof">
+    <!--  <section class = "social-proof">
         <h2>What Your Neighbors Say</h2>
         <div class="social-examples">
           <div class="person-1">
@@ -96,7 +96,7 @@
               <img src="images/pers1Triangle.png" alt="Amanda D.">
             </div>
             <div class="quote-text">
-              <h4>Amanda D.</h4>
+              <h3>Amanda D.</h3>
               <p>“Amazing coffee and even better employees. The latte was delicious and perfectly creamy. I applaud this 3rd wave coffee shop for creating the cozy space and keeping up with numerous orders. Will for sure be coming back and trying out the pastries.”</p>
             </div>
           </div>
@@ -106,13 +106,13 @@
               <img src="images/pers2Triangle.png" alt="Benjamin R.">
             </div>
             <div class="quote-text">
-              <h4>Benjamin R.</h4>
+              <h3>Benjamin R.</h3>
               <p>“Really nice experience here at Kindred Coffee. It’s bright and airy inside with quick and friendly staff. Even the customers were friendly. Friendly vibes throughout.”</p>
             </div>
           </div>
         </div>
 
-      </section>
+      </section><!-->
 
       <!-- Contact -->
       <!--<section class = "contact">
@@ -139,10 +139,17 @@
 
       </section>-->
 
-      <!-- Footer -->
+      <!-- Footer
       <footer>
       <p>&copy;2019 KindredCoffee. All Rights Reserved.</p>
-      </footer>
+      </footer>-->
     </div>
   </body>
+  <script type="text/javascript">
+  $('p').each(function(){
+    var string = $(this).html();
+    string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
+    $(this).html(string);
+  });
+</script>
 </html>

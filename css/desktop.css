@@ -1,0 +1,82 @@
+.page-container {
+  max-width: 1290px;
+}
+/*MQ Header Styles DESKTOP*/
+h1 {
+  font-size: 82px;
+  margin-bottom: .5em;
+}
+header p {
+  font-size: 36px;
+}
+header {
+  padding: 10% 10% 6%;
+}
+header img {
+  width: 40%;
+  padding: 0 0 10%;
+}
+/*MQ Brand Styles DESKTOP*/
+  .brand-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4em;
+
+  }
+.b-img-2, .b-img-3 {
+  display: block;
+      object-fit: contain;
+}
+.b-img-4 {
+  display: none;
+}
+/*MQ Newsletter Sign-Up Styles DESKTOP*/
+.sign-up {
+  padding: 6%;
+}
+.sign-up h2 {
+  font-size: 60px;
+  margin-bottom: .75em;
+}
+.sign-up h3,  {
+  font-size: 36px;
+}
+.sign-up p {
+  font-size: 24px;
+}
+input[type="submit"] {
+  font-size: 32px;
+  padding: .5em .25em;
+}
+/*MQ Products and Services Styles DESKTOP*/
+.products-services{
+  max-width: max-width: 1290px;
+  padding: 10% 6%;
+  font-size: 2rem;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-areas: "menu products community";
+  justify-content: space-around;
+}
+.menu {
+margin: 0;
+}
+.menu, .products, .community {
+  max-width:none;
+  width: 275px;
+  border: 2px solid yellow;
+  justify-content: center;
+
+}
+ .products-services p{
+   font-size: 22px;
+}
+.products-services h4 {
+  font-size: 30px;
+}
+.products-services img {
+  width: ;
+  padding: 0 0 1.5em;
+}
+.products-services p {
+  text-align: left;
+}
