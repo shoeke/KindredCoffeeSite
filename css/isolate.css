@@ -1,0 +1,180 @@
+
+:root {
+  --main-aqua: #3fbcc3;
+  --support-dk-orange: #f26a42;
+  --support-lt-peach: #fbb474;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+   /*set the root with a flex size that will make calcs easier*/
+}
+.page-container {
+  width: 100%;
+  margin: 0 auto;
+}
+/*can reduce the the % of container on desktop version*/
+h1, h2 {
+  font-family: "roboto-slab", Baskerville, serif;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+h1 {
+  font-size: 12rem;
+  color: var(--support-dk-orange);
+  margin-bottom: 8rem;
+}
+h2 {
+  font-size: 11rem;
+  margin-bottom: 6rem;
+}
+h3 {
+  font-size: 2.6em;
+}
+h3, h4{
+  font-family: "khula", verdana, sans-serif;
+
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 6rem;
+}
+h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--support-dk-orange);
+  margin: 2rem 0;
+}
+p {
+  font-family: "khula", verdana, sans-serif;
+  font-size: 2.6em;
+  font-weight: 400;
+  color: var(--support-dk-orange);
+  line-height: 1.2;
+}
+.med-screen-text {
+  display: none;
+}
+.lg-screen-text {
+  display: none;
+}
+.sm-screen-text {
+  display: block;
+}
+
+
+/*Products and Services Styles*/
+.products-services {
+  width: 45%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.menu, .products, .community {
+  padding: 10%;
+  border: 3px solid blue;
+}
+.products-services img {
+  display: block;
+  width: 40%;
+  max-width: 275px;
+  padding: 0 4em 2em;
+  margin: 0 auto;
+}
+.products-services p {
+  text-align: center;
+  margin: 0 8%;
+  color: #707070;
+}
+
+/*
+
+/*  **Tablet Media Query**
+@media only screen and (min-width: 680px) {
+  .sm-screen-text {
+    display: none;
+  }
+  .med-screen-text {
+    display: block;
+  }
+  .lg-screen-text {
+    display: none;
+  }
+
+/*MQ Header Styles TABLET
+  html {
+    font-size: .65vw;
+  }
+
+/*MQ Products and Services Styles TABLET
+.products-services{
+  padding: 10% 8%;
+  font-size: 1.85rem;
+  grid-template-columns: 47% 47%;
+  grid-template-areas: "menu products" "community community";
+  grid-row-gap: 8em;
+  grid-column-gap: 6%;
+}
+.menu, .products {
+  max-width: 86%;
+  margin: 0;
+  justify-content: center;
+}
+.community {
+  max-width: 47%;
+}
+.products-services img {
+  width: 200px;
+  padding: 0 4em 2em;
+}
+
+
+/*  **Desktop Media Query**
+@media only screen and (min-width: 1024px) {
+  .sm-screen-text {
+    display: none;
+  }
+  .med-screen-text {
+    display: none;
+  }
+  .lg-screen-text {
+    display: block;
+  }
+.page-container {
+  max-width: 1290px;
+}
+
+/*MQ Products and Services Styles DESKTOP
+.products-services{
+  max-width: max-width: 1290px;
+  padding: 10% 6%;
+  font-size: 2rem;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-areas: "menu products community";
+  justify-content: space-around;
+}
+.menu {
+margin: 0;
+}
+.menu, .products, .community {
+  max-width:none;
+  width: 275px;
+  border: 2px solid yellow;
+  justify-content: center;
+
+}
+ .products-services p{
+   font-size: 22px;
+}
+.products-services h4 {
+  font-size: 30px;
+}
+.products-services img {
+  width: ;
+  padding: 0 0 1.5em;
+}
+.products-services p {
+  text-align: left;
+}
+*/

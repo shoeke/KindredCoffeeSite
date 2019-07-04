@@ -10,7 +10,7 @@ html {
    /*set the root with a flex size that will make calcs easier*/
 }
 .page-container {
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
 }
 /*can reduce the the % of container on desktop version*/
@@ -21,7 +21,7 @@ h1, h2 {
   text-align: center;
 }
 h1 {
-  font-size: 12rem;
+  font-size: 12em;
   color: var(--support-dk-orange);
   margin-bottom: 8rem;
 }
@@ -48,7 +48,7 @@ h4 {
 }
 p {
   font-family: "khula", verdana, sans-serif;
-  font-size: 2.6em;
+  font-size: 5em;
   font-weight: 400;
   color: var(--support-dk-orange);
   line-height: 1.2;
@@ -66,14 +66,18 @@ p {
 header {
   padding: 20% 10% 10%;
   margin: 0 auto;
-  font-size: 2rem;
+  /*font-size: 1rem;*/
   text-align: center;
   background-image: url("../images/bgHBPattern.jpg");
   background-size: cover;
 }
+.header-container {
+  font-size: 1rem;
+}
 header img {
   width: 65%;
-  padding: 0 0 20%;
+  max-width: 275px;
+  padding-bottom: 8vh;
 }
 header p span {
   font-weight: 700;
@@ -298,17 +302,21 @@ footer {
   .lg-screen-text {
     display: none;
   }
+  html {
+    /*font-size: .65vw;*/
+  }
 
 /*MQ Header Styles TABLET*/
-  html {
-    font-size: .65vw;
-  }
+
   header {
     padding: 20% 12.5% 10%;
   }
+  .header-container {
+    font-size: 6.8px;
+  }
   header img {
     width: 50%;
-    padding: 0 0 15%;
+    /*padding: 0 0 13.5em;*/
   }
 /*MQ Brand Styles TABLET*/
   .brand-images {
@@ -352,6 +360,8 @@ form {
 }
 .menu, .products {
   max-width: 86%;
+  margin: 0;
+  justify-content: center;
 }
 .community {
   max-width: 47%;
@@ -360,10 +370,7 @@ form {
   width: 200px;
   padding: 0 4em 2em;
 }
-.products-services p {
-  color: #707070;
-  text-align: center;
-}
+
 /*MQ Social Proof TABLET*/
 .social-proof {
   font-size: 2.65rem;
@@ -453,4 +460,36 @@ header img {
 input[type="submit"] {
   font-size: 32px;
   padding: .5em .25em;
+}
+/*MQ Products and Services Styles DESKTOP*/
+.products-services{
+  max-width: max-width: 1290px;
+  padding: 10% 6%;
+  font-size: 2rem;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-areas: "menu products community";
+  justify-content: space-around;
+}
+.menu {
+margin: 0;
+}
+.menu, .products, .community {
+  max-width:none;
+  width: 275px;
+  border: 2px solid yellow;
+  justify-content: center;
+
+}
+ .products-services p{
+   font-size: 22px;
+}
+.products-services h4 {
+  font-size: 30px;
+}
+.products-services img {
+  width: ;
+  padding: 0 0 1.5em;
+}
+.products-services p {
+  text-align: left;
 }
