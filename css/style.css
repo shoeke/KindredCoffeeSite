@@ -44,7 +44,7 @@ h3 {
   margin: 2rem 0;
 }
 h4 {
-  font-size: 6.933em;
+  font-size: 5.867em;
 }
 p {
   font-family: "khula", verdana, sans-serif;
@@ -64,9 +64,8 @@ p {
 }
 /*main header styles*/
 header {
-  padding: 19.333em 8%;
+  padding: 16em 8%;
   margin: 0 auto;
-  /*font-size: 1rem;*/
   text-align: center;
   background-image: url("../images/bgHBPattern.jpg");
   background-size: cover;
@@ -93,20 +92,50 @@ header p:nth-last-of-type(1) {
   margin: 0;
 }
 /*Brand Images Styles*/
+.brand-images {
+  font-size: 1rem;
+}
 .brand-images img {
   width: 100%;
-  margin: 6rem 0;
+  margin: 6.933em 0;
 }
 .b-img-2, .b-img-3, .b-img-4 {
   display: none;
 }
+
+
+@media only screen and (min-width: 680px) {
+        /*MQ Header Styles TABLET*/
+
+          header {
+          padding: 10.662em 12.5%;
+        }
+          header img {
+            max-width: 1200px;
+          }
+        /*MQ Brand Styles TABLET*/
+          .brand-images {
+            font-size: .766em;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 3.5%;
+          }
+          .brand-images img {
+            height: 100%;
+          }
+          .b-img-4 {
+            display: block;
+          }
+  }
+
+
 
 /*Sign Up Section Styles*/
 
 .sign-up {
   background-color: var(--main-aqua);
   color: #fff;
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 10%;
 }
 .cta-wrapper {
@@ -138,24 +167,12 @@ input[type="text"] {
   box-sizing: border-box;
   background-color: #fff;
   width: 100%;
-  height: 5em;
-  margin: 1em auto;
-  padding-left: 25px;
+  height: 4em;
+  margin: .85em auto;
+  padding-left: 5%;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-size: 1.5em;
-	color: #adabab;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  font-size: 1.5em;
-	color: #adabab;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  font-size: 1.5em;
-	color: #adabab;
-}
-:-moz-placeholder { /* Firefox 18- */
+input::placeholder {
   font-size: 1.5em;
   color: #adabab;
 }
@@ -166,15 +183,15 @@ input[type="submit"]{
   background-color: var(--support-lt-peach);
   box-shadow: inset 0 0 36px #fdd4b0, 0 8px 6px -6px #888888;
   color: #fff;
-  font-size: 4.5rem;
+  font-size: 4.5em;
   padding: .85em .25em;
   font-weight: 600;
   text-transform: uppercase;
-  margin: .5em auto;
+  margin: .65em auto;
 }
 .sign-up p {
   color: #fff;
-  font-size: 2em;
+  font-size: 3.5em;
   text-align: center;
 }
 
@@ -306,34 +323,9 @@ footer {
     .lg-screen-text {
       display: none;
     }
-    html {
-      /*font-size: .65vw;*/
-    }
 
-  /*MQ Header Styles TABLET*/
 
-    header {
-    padding: 10.662em 12.5%;
-  }
-    .header-container {
-      font-size: 6.8px;
-    }
-    header img {
-      width: 50%;
-      /*padding: 0 0 13.5em;*/
-    }
-  /*MQ Brand Styles TABLET*/
-    .brand-images {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 4em;
-    }
-    .brand-images img {
-      height: 100%;
-    }
-    .b-img-4 {
-      display: block;
-    }
+
   /*MQ Sign Up Styles TABLET*/
     .sign-up {
       padding-bottom: 7.5%;
