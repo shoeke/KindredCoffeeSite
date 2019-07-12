@@ -8,11 +8,11 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 1vw;
-   /*set the root with a flex size that will make calcs easier*/
+  font-size: 16px;
+
 }
 .page-container {
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -23,12 +23,12 @@ h1, h2 {
   text-align: center;
 }
 h1 {
-  font-size: 12em;
+  font-size: 3.052em;
   color: var(--support-dk-orange);
   margin-bottom: .889em;
 }
 h2 {
-  font-size: 9.5rem;
+  font-size: 2.441em;
   margin-bottom: 2.5rem;
 }
 
@@ -40,20 +40,28 @@ h3, h4{
   margin-bottom: 6rem;
 }
 h3 {
-  font-size: 8rem;
+  font-size: 1.953em;
   text-transform: uppercase;
   color: var(--support-dk-orange);
   margin: 2rem 0;
 }
 h4 {
-  font-size: 4.8rem;
+  font-size: 1.563em;
+}
+p {
+  font-size: 1em;
 }
 p, .newsletter label {
   font-family: "khula", verdana, sans-serif;
-  font-size: 4.8rem;
   font-weight: 400;
   color: var(--support-dk-orange);
   line-height: 1.2;
+}
+.u-large {
+  font-size: 1.25em;
+}
+.u-small {
+  font-size: .8em;
 }
 .med-screen-text {
   display: none;
@@ -71,8 +79,6 @@ header {
   text-align: center;
   background-image: url("../images/bgHBPattern.jpg");
   background-size: cover;
-}
-.header-container {
   font-size: 1rem;
 }
 header img {
@@ -87,7 +93,6 @@ header img {
   white-space: nowrap;
 }
 header p {
-  font-size: 6.933em;
   margin-bottom: 1.111em;
 }
 header p:nth-last-of-type(1) {
@@ -109,8 +114,8 @@ header p:nth-last-of-type(1) {
 .sign-up {
   background-color: var(--main-aqua);
   color: #fff;
-  font-size: 1rem;
   padding: 10em 5%;
+  font-size: 1rem;
 }
 .cta-wrapper {
   margin: 0 auto;
@@ -148,7 +153,6 @@ form {
     "notice";
 }
 .newsletter label {
-  font-size: 4.5em;
   font-weight: 600;
   color: #cff0f2;
   margin-top: 5em;
@@ -156,7 +160,7 @@ form {
 
 input[type="text"] {
   box-sizing: border-box;
-  font-size: 8.533em;
+  font-size: 1.25rem;
   background-color: #fff;
   width: 100%;
   margin: 0 auto .85em auto;
@@ -165,11 +169,12 @@ input[type="text"] {
 
 input[type="submit"]{
   width: 100%;
+  max-width: 90vw;
   border-radius: 12px;
   background-color: var(--support-lt-peach);
   box-shadow: inset 0 0 36px #fdd4b0, 0 8px 6px -6px #888888;
   color: #fff;
-  font-size: 4.5em;
+  font-size: 1.25rem;
   padding: .85em .25em;
   font-weight: 600;
   text-transform: uppercase;
@@ -177,57 +182,10 @@ input[type="submit"]{
 }
 .sign-up p {
   color: #fff;
-  font-size: 3.5em;
   text-align: center;
+  line-height: 1.5rem;
 }
-@media only screen and (min-width: 680px) {
-/*MQ Header Styles TABLET*/
 
-  header {
-    padding: 10.662em 12.5%;
-  }
-  header img {
-    max-width: 1200px;
-  }
-/*MQ Brand Styles TABLET*/
-  .brand-images {
-    font-size: .766em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 3.5%;
-    }
-  .brand-images img {
-    height: 100%;
-  }
-  .b-img-4 {
-    display: block;
-  }
-/*MQ Sign Up Styles TABLET*/
-    .sign-up {
-      padding-bottom: 7.5%;
-      font-size: .662rem;
-    }
-    .sign-up h4 {
-      font-size: 5.331em;
-    }
-
-  form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 3%;
-      grid-template-areas:
-        "firstname  lastname"
-        "email     email"
-        "submit submit"
-        "notice notice";
-  }
-  #submit, #email {
-      grid-column: 1 / 3;
-  }
-  #submit {
-    grid-area: submit;
-  }
-}
 /*Products and Services Styles*/
 .menu, .products, .community {
   max-width: 90%;
@@ -246,9 +204,9 @@ input[type="submit"]{
 .products-services{
   padding: 10% 13%;
   margin: 0 auto;
-  font-size: 1.75rem;
   display: grid;
   grid-template-areas: "menu" "products" "community";
+  font-size: 1rem;
 }
 .products-services img {
   display: block;
@@ -265,8 +223,8 @@ input[type="submit"]{
 .social-proof {
   background-color: var(--support-lt-peach);
   color: #fff;
-  font-size: 2rem;
   padding: 10% 0;
+  font-size: 1rem;
 }
 .person-1, .person-2 {
   width: 100%;
@@ -291,7 +249,6 @@ padding-top: 10em;
   color: #707070;
 }
 .quote-text p {
-  font-size: 2em;
   line-height: 1.4;
 }
 
@@ -299,16 +256,13 @@ padding-top: 10em;
 /*Contact Styles*/
 .contact {
   padding: 10%;
-  font-size: 1.75rem;
   background-image: url("../images/bgHBPattern.jpg");
   background-size: cover;
   color: var(--main-aqua);
+  font-size: 1rem;
 }
 .contact a, .contact p {
   color: var(--main-aqua);
-}
-.contact h2 {
-  font-size: 12rem;
 }
 .contact-wrapper {
   max-width: 475px;
@@ -344,30 +298,75 @@ footer {
   margin: 0 auto;
   text-align: center;
 }
-
-/*  **Tablet Media Query**  */
+@media only screen and (min-width: 420px) {
+  header {
+    font-size: 1.2rem;
+  }
+}
 @media only screen and (min-width: 680px) {
-    .sm-screen-text {
-      display: none;
-    }
-    .med-screen-text {
-      display: block;
-    }
-    .lg-screen-text {
-      display: none;
-    }
+  html {
+    font-size: 21.6px;
+  }
+  .sm-screen-text {
+    display: none;
+  }
+  .med-screen-text {
+    display: block;
+  }
+  .lg-screen-text {
+    display: none;
+  }
 
+/*MQ Header Styles TABLET*/
+  header {
+    padding: 10.662em 12.5%;
+  }
+  header img {
+    max-width: 1200px;
+  }
 
+/*MQ Brand Styles TABLET*/
+  .brand-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3.5%;
+    }
+  .brand-images img {
+    height: 100%;
+  }
+  .b-img-4 {
+    display: block;
+  }
 
+/*MQ Sign Up Styles TABLET*/
+    .sign-up {
+      padding-bottom: 7.5%;
+    }
+  form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 3%;
+      grid-template-areas:
+        "firstname  lastname"
+        "email     email"
+        "submit submit"
+        "notice notice";
+  }
+  #submit, #email {
+      grid-column: 1 / 3;
+  }
+  #submit {
+    grid-area: submit;
+  }
 
   /*MQ Products and Services Styles TABLET*/
   .products-services{
     padding: 10% 8%;
-    font-size: 1.85rem;
     grid-template-columns: 47% 47%;
     grid-template-areas: "menu products" "community community";
     grid-row-gap: 8em;
     grid-column-gap: 6%;
+    font-size: .8rem;
   }
   .menu, .products {
     max-width: 86%;
@@ -384,7 +383,7 @@ footer {
 
   /*MQ Social Proof TABLET*/
   .social-proof {
-    font-size: 2.65rem;
+    font-size: .8rem;
   }
   .social-examples {
     display: flex;
@@ -398,7 +397,6 @@ footer {
     display: block;
   }
   .quote-text h4 {
-    font-size: 2.65em;
   }
   .quote-image {
     width: 50%;
@@ -408,12 +406,13 @@ footer {
   padding-top: 4em;
   }
   footer {
-    font-size: 1.5em;
   }
 }
 
 /*  **Desktop Media Query**  */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1040px) {
+  html {
+  }
   .sm-screen-text {
     display: none;
   }
@@ -422,6 +421,8 @@ footer {
   }
   .lg-screen-text {
     display: block;
+  }
+  header {
   }
   /*MQ Brand Styles DESKTOP*/
     .brand-images {
@@ -446,6 +447,19 @@ footer {
 
   form {
     width: 922px;
-    font-size: 7px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 27.2px;
+  }
+}
+@media only screen and (min-width: 135px) {
+  html {
+    font-size: 32px;
+  }
+  .page-container {
+    max-width: 1350px;
   }
 }

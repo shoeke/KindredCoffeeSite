@@ -24,10 +24,10 @@
         <div class="header-container">
           <img src="images/KindredCoffeeLogo.png" alt="KindredCoffee Cups Logo">
           <h1 class="sm-screen-text">Coffee on Us!</h1>
-          <h1 class = "med-screen-text">Have a<br> Coffee on Us!</h1>
+          <h1 class = "med-screen-text">Have a Coffee on Us!</h1>
           <h1 class = "lg-screen-text">Have a Coffee on Us!</h1>
-          <p>Come meet us at our Grand Opening at the <span class="bold">Garden Grove Shopping Center <span class="no-break">August 3–4th.</span></span>  </p>
-          <p>Let us welcome you with a free coffee and enter you to win a year's worth of our <span class="no-break">local bean brew!</span></p>
+          <p class="u-large">Come meet us at our Grand Opening at the <span class="bold">Garden Grove Shopping Center <span class="no-break">August 3–4th.</span></span>  </p>
+          <p class="u-large">Let us welcome you with a free coffee and enter you to win a year's worth of our <span class="no-break">local bean brew!</span></p>
         </div>
       </header>
 
@@ -67,14 +67,15 @@
               <input id="email" name="email" type="text"><br>
             </div>
             <input  id="submit" class="input-field" type="submit" value="Make Me Part of the Family">
-            <p id="notice">Don't Worry! We got your back! We don't share any of your info!</p>
+            <p id="notice">Don't Worry! We got your back!
+              <span class="no-break">We don't share any of your info!</span></p>
           </form>
 
         </div>
       </section>
 
       <!-- Products and Services Section -->
-    <!--  <section class = "products-services">
+    <section class = "products-services">
         <div class="menu">
           <img src="images/menuIcon.png" alt="coffee menu icon">
           <h3>Menu</h3>
@@ -95,10 +96,10 @@
           <p class="sm-screen-text med-screen-text">We support local, and becoming a communication center for local announcements and volunteer opportunities.</p>
           <p class="lg-screen-text">Our goal is to provide a place where our neighbors can come together. We support sharing local talent, and becoming a communication center for local news and volunteer opportunities. </p>
         </div>
-      </section>-->
+      </section>
 
       <!-- Social Proof -->
-    <!--  <section class = "social-proof">
+    <section class = "social-proof">
         <h2>What Your Neighbors Say</h2>
         <div class="social-examples">
           <div class="person-1">
@@ -122,10 +123,10 @@
           </div>
         </div>
 
-      </section><!-->
+      </section><!
 
       <!-- Contact -->
-      <!--<section class = "contact">
+      <section class = "contact">
         <h2>Let's Be Friends!</h2>
         <div class="contact-wrapper">
           <div class="address-info">
@@ -147,19 +148,32 @@
           </div>
         </div>
 
-      </section>-->
+      </section>
 
-      <!-- Footer
+      <!-- Footer -->
       <footer>
       <p>&copy;2019 KindredCoffee. All Rights Reserved.</p>
-      </footer>-->
+      </footer>
     </div>
-  </body>
+    <script type="text/javascript">
+    var headings = document.getElementsByTagName( 'h1' );
+for ( var i=0; i<headings.length; i++ ) {
+  var h1s = headings[i].innerHTML.split( ' ' );
+  h1s[h1s.length-2] += "&nbsp;" + h1s[h1s.length-1];
+  h1s.pop();
+  headings[i].innerHTML = h1s.join( ' ' );
+}
+  </script>
   <script type="text/javascript">
-  $('p').each(function(){
-    var string = $(this).html();
-    string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
-    $(this).html(string);
-  });
+  var headings = document.getElementsByTagName( 'h2' );
+for ( var i=0; i<headings.length; i++ ) {
+var h1s = headings[i].innerHTML.split( ' ' );
+h1s[h1s.length-2] += "&nbsp;" + h1s[h1s.length-1];
+h1s.pop();
+headings[i].innerHTML = h1s.join( ' ' );
+}
 </script>
+
+  </body>
+
 </html>
