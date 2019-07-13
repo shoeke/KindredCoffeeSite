@@ -193,7 +193,7 @@ input[type="submit"]{
   margin: 0 auto 1.5em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-content: center;
 }
 .menu {
   grid-area: menu;
@@ -425,7 +425,6 @@ footer p {
   html {
     font-size: 21.6px;
   }
-
   .sm-screen-text {
     display: none;
   }
@@ -435,14 +434,17 @@ footer p {
   .lg-screen-text {
     display: block;
   }
-  header {
+  header img {
+    width: 60%;
   }
   /*MQ Brand Styles DESKTOP*/
     .brand-images {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 4em;
-
+      grid-column-gap: 1.5em;
+    }
+    .brand-images img {
+      margin: 1.5em 0;
     }
   .b-img-2, .b-img-3 {
     display: block;
@@ -452,25 +454,47 @@ footer p {
     display: none;
   }
   /*MQ Products and Services Styles DESKTOP*/
+  .menu, .products, .community {
+    width: 100%;
+  }
   .products-services{
-    grid-template-columns: repeat(3, 30%);
+    padding: 4em 2em;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "menu products community";
-    justify-content: space-around;
+    grid-column-gap: 8%;
+    font-size: 1rem;
+  }
+  .products-services img {
+    height: auto;
+    padding-bottom: 2em;
+}
+  .products-services p {
+    line-height: 1.4;
   }
 
   form {
     max-width: 765px;
   }
+
 }
-/*
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 1350px) {
   html {
     font-size: 27.2px;
   }
-}
-@media only screen and (min-width: 1350px) {
-  html {
-    font-size: 32px;
+  .products-services{
+    padding: 4em .75em;
   }
+  .social-proof {
+    font-size: 1rem;
+  }
+  .social-examples {
+    flex-direction: row;
+    justify-content: space-between;
 
-}*/
+  }
+  .person-1, .person-2 {
+    width: 48%;
+    height: 475px;
+  }
+}
