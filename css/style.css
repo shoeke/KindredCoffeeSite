@@ -83,8 +83,7 @@ header {
   font-size: 1rem;
 }
 header img {
-  width: 65%;
-  max-width: 275px;
+  width: 75%;
   padding-bottom: 2.5em;
 }
 .bold {
@@ -122,7 +121,7 @@ header p:nth-last-of-type(1) {
   margin: 0 auto;
 }
 input {
-  max-height: 90px;
+  max-height: 5em;
 }
 .input-field {
 padding: .5em 0;
@@ -190,9 +189,11 @@ input[type="submit"]{
 
 /*Products and Services Styles*/
 .menu, .products, .community {
-  max-width: 90%;
   height: auto;
   margin: 0 auto 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .menu {
   grid-area: menu;
@@ -204,7 +205,7 @@ input[type="submit"]{
   grid-area: community;
 }
 .products-services{
-  padding: 4em 13%;
+  padding: 4em 2em;
   margin: 0 auto;
   display: grid;
   grid-template-areas: "menu" "products" "community";
@@ -213,20 +214,21 @@ input[type="submit"]{
 }
 .products-services img {
   display: block;
-  width: 85%;
-  padding: 2em 1em .5em;
+  height: 10em;
+  padding: 2em 0 .5em;
   margin: 0 auto;
 }
 .products-services p {
   color: #707070;
   text-align: center;
+  line-height: 1.5;
 }
 
 /*Social Proof Styles*/
 .social-proof {
   background-color: var(--support-lt-peach);
   color: #fff;
-  padding: 10% 0;
+  padding: 4em 0 2em;
   font-size: 1rem;
 }
 .person-1, .person-2 {
@@ -267,7 +269,7 @@ padding: 8em 6% 1em;
   color: var(--main-aqua);
 }
 .contact-wrapper {
-  max-width: 475px;
+  /*max-width: 475px;*/
   margin: 0 auto;
 }
 .emp-text {
@@ -275,12 +277,16 @@ padding: 8em 6% 1em;
 }
 .address-info {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: minmax(75px, 1fr) 5fr;
   grid-column-gap: 5%;
   grid-row-gap: .75em;
   grid-auto-rows: 1fr;
-  align-items: center;
+  align-items: center
+  justify-content: center;
   padding-bottom: .75em;
+}
+.address-info p, .address-info img {
+  align-self: center;
 }
 hr {
   border: 1.5px solid var(--support-lt-peach);
@@ -322,22 +328,15 @@ footer p {
     display: none;
   }
 
-/*MQ Header Styles TABLET*/
-  header {
-    padding: 10.662em 12.5%;
-  }
-  header img {
-    max-width: 1200px;
-  }
-
 /*MQ Brand Styles TABLET*/
   .brand-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 3.5%;
+    grid-column-gap: 1em;
     }
   .brand-images img {
     height: 100%;
+    margin: 1em 0;
   }
   .b-img-4 {
     display: block;
@@ -365,37 +364,40 @@ footer p {
 
   /*MQ Products and Services Styles TABLET*/
   .products-services{
-    padding: 10% 8%;
-    grid-template-columns: 47% 47%;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "menu products" "community community";
-    grid-row-gap: 8em;
-    grid-column-gap: 6%;
-    /*font-size: .8rem;*/
+    /*grid-row-gap: 8em;*/
+    grid-column-gap: 12%;
+    font-size: .65rem;
   }
-  .menu, .products {
+/*  .menu, .products {
     max-width: 86%;
     margin: 0;
     justify-content: center;
-  }
+  }*/
   .community {
-    max-width: 47%;
+    width: 45%;
+    justify-self: center;
   }
   .products-services img {
-    width: 200px;
-    padding: 0 4em 2em;
+    /*width: 200px;
+    padding: 0 4em 2em;*/
+  }
+  .products-services p {
+    line-height: 1.2;
   }
 
   /*MQ Social Proof TABLET*/
   .social-proof {
-    /*font-size: .8rem;*/
+    font-size: .7rem;
   }
   .social-examples {
     display: flex;
     flex-direction: column;
-    padding: 5% 8%;
+    padding: 0 8%;
   }
   .person-1 {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
   .person-2 {
     display: block;
@@ -408,6 +410,11 @@ footer p {
   .quote-text {
   padding: 6%;
   padding-top: 4em;
+  }
+  .address-info img {
+    max-width:
+  }
+  .address-info p {
   }
   footer {
   }
