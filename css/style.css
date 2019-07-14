@@ -3,12 +3,13 @@
   --main-aqua: #3fbcc3;
   --support-dk-orange: #f26a42;
   --support-lt-peach: #fbb474;
+  --section-padding: 3em 7%;
 }
 * {
   box-sizing: border-box;
 }
 html {
-  font-size: 5vw;
+  font-size: 14px;
 
 }
 .page-container {
@@ -41,7 +42,7 @@ h3, h4{
   /*margin-bottom: 1em;*/
 }
 h3 {
-  font-size: 1.953em;
+  font-size: 1.563em;
   text-transform: uppercase;
   color: var(--support-dk-orange);
   /*margin: 2rem 0;*/
@@ -73,14 +74,23 @@ p, .newsletter label {
 .sm-screen-text {
   display: block;
 }
+/* section settings */
+
+header, .sign-up, .products-services, .social-proof, .contact {
+  padding: var(--section-padding);
+  font-size: 1rem;
+}
+header, .contact {
+  background-image: url("../images/bg_herringbone_tile.jpg");
+  background-repeat: repeat;
+}
+
+
+
 /*main header styles*/
 header {
-  padding: 4em 7%;
   margin: 0 auto;
   text-align: center;
-  background-image: url("../images/bgHBPattern.jpg");
-  background-size: cover;
-  font-size: 1rem;
 }
 header img {
   width: 75%;
@@ -114,17 +124,16 @@ header p:nth-last-of-type(1) {
 .sign-up {
   background-color: var(--main-aqua);
   color: #fff;
-  font-size: 1rem;
-  padding: 4em 7%;
 }
 .cta-wrapper {
   margin: 0 auto;
+  font-size: .8rem;
 }
 input {
   max-height: 5em;
 }
 .input-field {
-padding: .5em 0;
+padding: .35em 0;
 }
 #input-1 {
   grid-area: firstname;
@@ -152,6 +161,7 @@ form {
     "submit"
     "notice";
     justify-content: center;
+    max-width: 500px;
 }
 .newsletter label {
   font-weight: 600;
@@ -164,23 +174,26 @@ input[type="text"] {
   font-size: 1.25rem;
   background-color: #fff;
   width: 100%;
-  margin: 0 auto .85em auto;
   padding: .2em 5%;
+  margin-bottom: .75em;
 }
 
 input[type="submit"]{
   width: 100%;
   max-width: 90vw;
-  border-radius: 12px;
+  border-radius: 5px;
   background-color: var(--support-lt-peach);
   box-shadow: inset 0 0 36px #fdd4b0, 0 8px 6px -6px #888888;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 1em auto;
-  font-size: 1em;
+  margin: 1.5em auto;
+  padding: .5em;
+  font-size: 1.2em;
 }
-
+.sign-up h4 {
+      margin-top: -1em;
+}
 .sign-up p {
   color: #fff;
   text-align: center;
@@ -205,11 +218,9 @@ input[type="submit"]{
   grid-area: community;
 }
 .products-services{
-  padding: 4em 2em;
   margin: 0 auto;
   display: grid;
   grid-template-areas: "menu" "products" "community";
-  font-size: 1rem;
   justify-content: center;
 }
 .products-services img {
@@ -228,26 +239,41 @@ input[type="submit"]{
 .social-proof {
   background-color: var(--support-lt-peach);
   color: #fff;
-  padding: 4em 0 2em;
-  font-size: 1rem;
+  padding-bottom: 2em;
+}
+.social-examples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .person-1, .person-2 {
-  width: 100%;
   background-color: #fdddc0;
-  box-shadow: inset 0 0 15px #9e9e9e40;
+  box-shadow: inset 0 0 15px #47776b33;
 }
 .person-2 {
   display: none;
 }
 /*display:block; on tablet and above*/
 
-.quote-image {
-  width: 75%;
+.people {
+  overflow: hidden;
+  max-width: 480px;
+}
+.people img {
+  width: 50%;
   float: left;
-  shape-outside: polygon(0% 0%, 110% 0%, 0% 110%);
+  shape-outside: polygon(0% 0%, 100% 0%, 0% 100%);
+  margin: 0 2em 0 0;
+  display: none;
+}
+
+.quote-image::after {
+  content: "";
+  clear: left;
 }
 .quote-text {
-padding: 8em 6% 1em;
+padding: 6%;
+text-align: left;
 }
 .quote-text p, .quote-text h4 {
   color: #707070;
@@ -259,18 +285,16 @@ padding: 8em 6% 1em;
 
 /*Contact Styles*/
 .contact {
-  padding: 4em 10% 2em;
-  background-image: url("../images/bgHBPattern.jpg");
-  background-size: cover;
+  padding-bottom: 2em;
   color: var(--main-aqua);
-  font-size: 1rem;
 }
 .contact a, .contact p {
   color: var(--main-aqua);
 }
 .contact-wrapper {
-  /*max-width: 475px;*/
-  margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .emp-text {
   font-weight: 700;
@@ -285,8 +309,15 @@ padding: 8em 6% 1em;
   justify-content: center;
   padding-bottom: .75em;
 }
+.address-info img {
+max-width: 80%;
+}
+.address-info p {
+max-width: 100%;
+}
 .address-info p, .address-info img {
   align-self: center;
+
 }
 hr {
   border: 1.5px solid var(--support-lt-peach);
@@ -361,6 +392,10 @@ footer p {
   #submit {
     grid-area: submit;
   }
+  input[type="submit"] {
+    width: 70%;
+    max-width: 450px;
+  }
 
   /*MQ Products and Services Styles TABLET*/
   .products-services{
@@ -368,7 +403,7 @@ footer p {
     grid-template-areas: "menu products" "community community";
     /*grid-row-gap: 8em;*/
     grid-column-gap: 12%;
-    font-size: .65rem;
+    font-size: .5rem;
   }
 /*  .menu, .products {
     max-width: 86%;
@@ -383,18 +418,14 @@ footer p {
     /*width: 200px;
     padding: 0 4em 2em;*/
   }
-  .products-services p {
-    line-height: 1.2;
-  }
+
 
   /*MQ Social Proof TABLET*/
-  .social-proof {
-    font-size: .7rem;
-  }
+
   .social-examples {
-    display: flex;
-    flex-direction: column;
-    padding: 0 8%;
+
+    margin-top: -1em;
+    font-size: .85rem;
   }
   .person-1 {
     margin-bottom: 2em;
@@ -404,12 +435,9 @@ footer p {
   }
   .quote-text h4 {
   }
-  .quote-image {
-    width: 50%;
-  }
+
   .quote-text {
-  padding: 6%;
-  padding-top: 4em;
+  font-size: 20px;
   }
   .address-info img {
     max-width:
@@ -453,12 +481,15 @@ footer p {
   .b-img-4 {
     display: none;
   }
+  input[type="submit"] {
+    max-width: 60%;
+  }
+
   /*MQ Products and Services Styles DESKTOP*/
   .menu, .products, .community {
     width: 100%;
   }
   .products-services{
-    padding: 4em 2em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "menu products community";
     grid-column-gap: 8%;
@@ -470,31 +501,42 @@ footer p {
 }
   .products-services p {
     line-height: 1.4;
+    text-align: left
   }
 
-  form {
-    max-width: 765px;
-  }
 
 }
-
+@media only screen and (min-width: 1200px){
+  /*MQ DESKTOP Social Proof*/
+.social-examples {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.people {
+  width: 48%;
+  max-width: 100%;
+  height: 275px;
+}
+}
 @media only screen and (min-width: 1350px) {
   html {
     font-size: 27.2px;
   }
-  .products-services{
-    padding: 4em .75em;
+  header, .sign-up, .products-services, .social-proof, .contact {
+    padding: 2em 7%;
   }
   .social-proof {
     font-size: 1rem;
   }
-  .social-examples {
-    flex-direction: row;
-    justify-content: space-between;
 
-  }
-  .person-1, .person-2 {
-    width: 48%;
-    height: 475px;
-  }
+
 }
+@media only screen and (min-width: 320px){
+    html {
+      font-size: 16px;
+    }
+    .people img {
+      display: block;
+    }
+  }
